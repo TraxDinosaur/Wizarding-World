@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <radialGradient id="sparkleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="70%" stop-color="#e6c200" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#8c52ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main sparkle -->
+  <circle cx="12" cy="12" r="5" fill="url(#sparkleGradient)" />
+  
+  <!-- Four-pointed star -->
+  <path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z" 
+        fill="#e6c200" 
+        opacity="0.8" />
+  
+  <!-- Eight-pointed star overlay -->
+  <path d="M12,4 L13,10 L19,12 L13,14 L12,20 L11,14 L5,12 L11,10 Z" 
+        fill="#ffffff" 
+        opacity="0.9" />
+  
+  <!-- Center dot -->
+  <circle cx="12" cy="12" r="1" fill="#ffffff" />
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#f5eaff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8c52ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Wand glow effect -->
+  <circle cx="16" cy="8" r="8" fill="url(#glow)" />
+  
+  <!-- Wand handle -->
+  <rect x="14" y="10" width="4" height="18" rx="1" ry="1" fill="#3a2a0d" />
+  
+  <!-- Wand middle section -->
+  <rect x="13.5" y="9" width="5" height="3" rx="1" ry="1" fill="#8c7148" />
+  
+  <!-- Wand tip -->
+  <path d="M14,1 L18,1 L16,8 Z" fill="#e6c200" />
+  
+  <!-- Sparkle at wand tip -->
+  <circle cx="16" cy="2" r="1" fill="#ffffff" />
+  
+  <!-- Magic lines -->
+  <path d="M16,0 L16,2 M13,2 L19,2 M14,4 L18,4" stroke="#ffffff" stroke-width="0.5" opacity="0.8" />
+</svg>

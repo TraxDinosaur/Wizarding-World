@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="glow" />
+      <feBlend in="SourceGraphic" in2="glow" mode="screen" />
+    </filter>
+  </defs>
+  
+  <!-- Nebula background -->
+  <rect width="1000" height="1000" fill="#0c0a20" />
+  
+  <!-- Distant stars -->
+  <g opacity="0.5">
+    <circle cx="100" cy="200" r="1" fill="#f5f5f5" />
+    <circle cx="300" cy="150" r="1.2" fill="#f5f5f5" />
+    <circle cx="500" cy="250" r="0.8" fill="#f5f5f5" />
+    <circle cx="700" cy="350" r="1" fill="#f5f5f5" />
+    <circle cx="900" cy="100" r="1.3" fill="#f5f5f5" />
+    <circle cx="150" cy="450" r="0.9" fill="#f5f5f5" />
+    <circle cx="350" cy="550" r="1.1" fill="#f5f5f5" />
+    <circle cx="550" cy="650" r="0.7" fill="#f5f5f5" />
+    <circle cx="750" cy="750" r="1" fill="#f5f5f5" />
+    <circle cx="950" cy="500" r="0.8" fill="#f5f5f5" />
+    <circle cx="200" cy="800" r="1.2" fill="#f5f5f5" />
+    <circle cx="400" cy="900" r="0.9" fill="#f5f5f5" />
+    <circle cx="600" cy="100" r="1" fill="#f5f5f5" />
+    <circle cx="800" cy="200" r="0.8" fill="#f5f5f5" />
+    <circle cx="50" cy="700" r="1.1" fill="#f5f5f5" />
+    <circle cx="250" cy="300" r="0.7" fill="#f5f5f5" />
+    <circle cx="450" cy="400" r="1" fill="#f5f5f5" />
+    <circle cx="650" cy="500" r="0.9" fill="#f5f5f5" />
+    <circle cx="850" cy="600" r="1.2" fill="#f5f5f5" />
+  </g>
+  
+  <!-- Magical clouds -->
+  <g filter="url(#glow)" opacity="0.2">
+    <path d="M200,300 C250,250 300,350 350,300 S400,200 450,250 S500,350 550,300 S600,200 650,250 S700,350 750,300" 
+          fill="none" stroke="#8c52ff" stroke-width="40" stroke-linecap="round" opacity="0.2" />
+    
+    <path d="M150,600 C200,550 250,650 300,600 S350,500 400,550 S450,650 500,600 S550,500 600,550 S650,650 700,600 S750,500 800,550" 
+          fill="none" stroke="#3d85c6" stroke-width="30" stroke-linecap="round" opacity="0.15" />
+    
+    <path d="M250,900 C300,850 350,950 400,900 S450,800 500,850 S550,950 600,900 S650,800 700,850" 
+          fill="none" stroke="#e6c200" stroke-width="20" stroke-linecap="round" opacity="0.1" />
+  </g>
+  
+  <!-- Magical symbols scattered around -->
+  <g opacity="0.1">
+    <!-- Crescent moon -->
+    <path d="M800,200 a30,30 0 1,1 0,60 a20,20 0 1,1 0,-60" fill="#e6c200" />
+    
+    <!-- Star -->
+    <path d="M300,400 L310,380 L330,370 L310,360 L300,340 L290,360 L270,370 L290,380 Z" fill="#e6c200" />
+    
+    <!-- Pentagram -->
+    <path d="M600,700 L620,750 L580,720 L640,720 L600,750 Z" fill="#8c52ff" />
+    
+    <!-- Magic circle -->
+    <circle cx="200" cy="800" r="30" fill="none" stroke="#3d85c6" stroke-width="2" />
+    <circle cx="200" cy="800" r="20" fill="none" stroke="#3d85c6" stroke-width="1" />
+    <path d="M170,800 L230,800 M200,770 L200,830" stroke="#3d85c6" stroke-width="1" />
+    
+    <!-- Runes -->
+    <path d="M700,300 L720,350 M700,350 L720,300 M710,300 L710,350" stroke="#8c52ff" stroke-width="2" />
+    <path d="M150,500 L170,500 L170,550 L150,550 M150,525 L170,525" stroke="#8c52ff" stroke-width="2" />
+    <path d="M450,150 L450,200 L480,200 M450,175 L470,175" stroke="#8c52ff" stroke-width="2" />
+    
+    <!-- Spiral -->
+    <path d="M850,650 a5,5 0 0,1 10,0 a10,10 0 0,1 -20,0 a15,15 0 0,1 30,0 a20,20 0 0,1 -40,0" 
+          fill="none" stroke="#e6c200" stroke-width="1" />
+  </g>
+</svg>
